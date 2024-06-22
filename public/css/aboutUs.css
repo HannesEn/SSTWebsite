@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(42, 42, 42);
+}
+body {
+  color: white;
+  font-family: "Silkscreen", cursive;
+  height: 100%;
+}
+.about-us-body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+}
+.about-us-main-title {
+  margin-top: 100px;
+}
+.how-it-started-container {
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 300px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.how-it-started-title {
+  font-size: 30px;
+}
+.how-it-started-paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 10px;
+  color: rgb(178, 178, 178);
+}
+.how-it-is-going-container {
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  padding-left: 300px;
+  padding-right: 30px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.how-it-is-going-title {
+  font-size: 30px;
+}
+.how-it-is-going-paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 10px;
+  color: rgb(178, 178, 178);
+}
+.where-it-is-going-container {
+  align-items: flex-start;
+  justify-content: left;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 300px;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+.where-it-is-going-title {
+  font-size: 30px;
+}
+.where-it-is-going-paragraph {
+  font-size: 18px;
+  line-height: 22px;
+  padding-top: 10px;
+  color: rgb(178, 178, 178);
+}

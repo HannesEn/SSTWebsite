@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(42, 42, 42);
+}
+body {
+  color: white;
+  font-family: "Silkscreen", cursive;
+  height: 100%;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/events.css" />
+    <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+    <title>MPT | Events</title>
+  </head>
+  <body>
+    <%- include ('nav.ejs') -%>
+    <div class="events-body">
+      <div class="events-body-title">
+        <div class="events-above-fold">
+          <h1 class="events-title">Events</h1>
+        </div>
+        <div class="events">
+          <div class="events-upcoming">
+            <div class="events-upcoming-title">
+              <h1>Upcoming</h1>
+            </div>
+            <div class="events-card-section-1">
+              <div class="events-card-section-1-1"> <%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-1-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-1-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-1-1"><%- include ('events-card.ejs') -%></div>
+              <div class="more-events-1"><a href="./all-events.ejs" class="more-events-lnk-1">Learn more</a></div>
+          </div>
+          <div class="events-active">
+            <div class="events-active-title">
+              <h1>Active</h1>
+            </div>
+            <div class="events-card-section-2">
+              <div class="events-card-section-2-1"> <%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-2-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-2-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-2-1"><%- include ('events-card.ejs') -%></div>
+              <div class="more-events-2"><a href="./all-events.ejs" class="more-events-lnk-2">Learn more</a></div>
+            </div>
+          </div>
+          <div class="events-past">
+            <div class="events-past-title">
+              <h1>Past</h1>
+            </div>
+            <div class="events-card-section-3">
+             <div class="events-card-section-3-1"> <%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-3-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-3-1"><%- include ('events-card.ejs') -%></div>
+              <div class="events-card-section-3-1"><%- include ('events-card.ejs') -%></div>
+              <div class="more-events-3"><a href="./all-events.ejs" class="more-events-lnk-3">Learn more</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

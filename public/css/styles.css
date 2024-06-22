@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: white;
+  height: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(42, 42, 42);
+}
+.title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+  font-size: 40px;
+  background-color: #00000000;
+  padding-top: 20vh;
+  margin-left: 20px;
+  padding-top: 30vh;
+}
+ul {
+  list-style-type: none;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom: rgb(37, 37, 37) 2px solid;
+  box-shadow: 5px 4px rgb(34, 34, 34);
+  vertical-align: center;
+  background-color: rgb(42, 42, 42);
+}
+li {
+  display: inline;
+  padding-left: 7vw;
+  font-size: 18px;
+  padding-top: 50px;
+}
+nav {
+  background-color: rgb(42, 42, 42);
+  white-space: nowrap;
+  height: 75px;
+  width: 100vw;
+}
+a:not(.more-events-lnk-1, .more-events-lnk-2, .more-events-lnk-3) {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(138, 138, 138);
+}
+.home {
+  font-size: 25px;
+  padding-left: 8vw;
+  padding-right: 15vw;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 10px;
+  display: none;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 1385px) {
+  .home {
+    padding-right: 200px;
+  }
+}
+@media screen and (max-width: 1039px) {
+  .home {
+    padding-right: 120px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 11.6vh;
+    background-color: rgb(42, 42, 42);
+    box-shadow: -5px 4px rgb(34, 34, 34);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    padding-right: 60px;
+    width: 40%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 500px;
+  }
+  .burger div {
+    display: flex;
+  }
+  .home {
+    padding-left: 60px;
+    padding-right: 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+@media screen and (max-width: 803px) {
+  .burger {
+    padding-left: 400px;
+  }
+}
+@media screen and (max-width: 706px) {
+  .burger {
+    padding-left: 300px;
+  }
+  .title {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .burger {
+    padding-left: 250px;
+  }
+}
+@media screen and (max-width: 558px) {
+  .burger {
+    padding-left: 200px;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+.burger:hover {
+  cursor: pointer;
+}
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.landingPageTop {
+  height: 90vw;
+  width: 100%;
+  background-image: url(../img/mptBackground.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  align-items: left;
+}
+.gray {
+  color: orange;
+}
+.subtitle {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.mpt {
+  padding-right: 630px;
+}
+.explore-button {
+  color: white;
+  font-size: 25px;
+  margin-top: 45px;
+  margin-left: 5vw;
+  letter-spacing: 2px;
+  background-color: #ffa500;
+  width: 200px;
+  padding-left: 7px;
+  padding-right: 7px;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 15px;
+  margin-right: 650px;
+}
+.explore-button:hover {
+  background-color: #b37400;
+  cursor: pointer;
+}
+.explore-button a:hover {
+  color: white;
+}
+.nav-links {
+  position: absolute;
+  padding-top: 12px;
+  letter-spacing: 2px;
+}
